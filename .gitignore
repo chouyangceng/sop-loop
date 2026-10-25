@@ -1,0 +1,14 @@
+node_modules/
+dist/
+src-tauri/target/
+src-tauri/gen/android/.gradle/
+src-tauri/gen/android/app/build/
+src-tauri/gen/android/build/
+src-tauri/gen/android/.idea/
+.DS_Store
+
+# Local binaries are kept in outputs for this checkout; CI publishes builds.
+outputs/*.app/
+outputs/*.apk
+outputs/*.aab
+work/
