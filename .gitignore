@@ -12,3 +12,4 @@ outputs/*.app/
 outputs/*.apk
 outputs/*.aab
 work/
+.playwright-cli/
