@@ -61,5 +61,6 @@ deepseek-chat
 
 ## 设计文档
 
+- [SOP Loop logo](outputs/imagegen/SOP-Loop-logo.png)
 - [产品设计蓝图](outputs/SOP-Loop-产品设计蓝图.md)
 - [融合设计](outputs/SOP-Loop-融合设计.md)
