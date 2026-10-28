@@ -95,7 +95,8 @@ function load() {
   if (!external.subjectConfig) external.subjectConfig = readJSON('shiti-subject-config', null)
   const result = normalizeState(external)
   if (!result.tasks.length && !raw.sops && !raw.questions) result.tasks = clone(seed.tasks)
-  if (!result.sops.length) result.sops = clone(seed.sops)
+  const hasPersistedSops = Array.isArray(raw.sops) || Array.isArray(raw.appData?.sops)
+  if (!result.sops.length && !hasPersistedSops) result.sops = clone(seed.sops)
   return result
 }
 function save() { localStorage.setItem(WORKSPACE_KEY, JSON.stringify(state)) }
