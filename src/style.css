@@ -207,6 +207,11 @@ button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-
 #mistake-query { width: 170px; border: 1px solid var(--line); border-radius: 8px; padding: 6px 8px; color: var(--ink); background: white; font-size: 11px; }
 @media (max-width: 1100px) { .task-form-grid { grid-template-columns: 1fr 1fr; } .task-form-grid input[name="title"] { grid-column: 1 / -1; } }
 @media (max-width: 900px) { .mobile-nav { grid-template-columns: repeat(7, 1fr); } }
+@media (max-width: 1500px) and (min-width: 901px) {
+  .two-col { grid-template-columns: 1fr; }
+  .task-form-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .task-form-grid input[name="title"], .task-form-grid input[name="subject"] { grid-column: span 2; }
+}
 @media (max-width: 600px) { .quick-add, .task-form-grid, .metrics-grid { grid-template-columns: 1fr; } .task-form-grid input[name="title"] { grid-column: auto; } .task-row { grid-template-columns: 28px 1fr; } .task-actions { grid-column: 2; justify-content: flex-start; flex-wrap: wrap; } .mistake-head { flex-direction: column; } .mistake-tools { align-items: flex-start; flex-direction: column; } .mistake-tools > div { width: 100%; } #mistake-query { flex: 1; width: auto; } .metric-row { display: grid; gap: 4px; } .metric-row span { text-align: left; } }
 
 .guide-overlay { position: fixed; inset: 0; z-index: 20; pointer-events: none; }
