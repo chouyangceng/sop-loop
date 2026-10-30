@@ -241,3 +241,13 @@ button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-
 .import-block { border: 1px dashed var(--line); border-radius: 10px; padding: 12px; display: grid; gap: 8px; }
 .import-block p { margin: 0; }
 .import-hint { font-size: 11px; }
+.sop-date-group { border-bottom: 1px solid #edf1ed; }
+.sop-date-group:last-child { border-bottom: 0; }
+.sop-date-group summary { display: flex; justify-content: space-between; align-items: center; padding: 13px 14px; cursor: pointer; color: var(--accent-dark); list-style: none; }
+.sop-date-group summary::-webkit-details-marker { display: none; }
+.sop-date-group summary::before { content: '▸'; margin-right: 8px; color: var(--muted); }
+.sop-date-group[open] summary::before { content: '▾'; }
+.sop-date-group summary span { color: var(--muted); font-size: 11px; font-weight: 400; }
+.mistake-date-tools { align-items: center; }
+.mistake-date-tools { display: flex; flex-wrap: wrap; gap: 6px; }
+.mistake-date-tools input, .mistake-date-tools select { border: 1px solid var(--line); border-radius: 8px; padding: 7px 8px; background: #fbfdfb; color: var(--ink); font-size: 12px; }
