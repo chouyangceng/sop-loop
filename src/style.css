@@ -282,3 +282,9 @@ button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-
 .calendar-picker-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
 .calendar-month-options { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
 .calendar-month-options .btn { padding: 7px 3px; }
+.calendar-head-actions { display: flex; flex-wrap: wrap; gap: 7px; align-items: center; }
+.calendar-day.today { background: var(--accent); border-color: var(--accent); color: #fff; box-shadow: 0 0 0 3px rgba(29,139,109,.18); }
+.calendar-day.today strong { color: #fff; text-decoration: none; }
+.calendar-day.today.selected { box-shadow: 0 0 0 3px rgba(211,131,55,.35); }
+.calendar-day.today .calendar-dot.temporary { background: #d9eee6; }
+.calendar-day.today .calendar-dot.yearly { background: #ffe0ad; }
