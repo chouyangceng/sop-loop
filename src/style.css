@@ -299,3 +299,6 @@ button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-
 .plan-table td:first-child { min-width: 140px; }
 #plan-date { max-width: 160px; }
 @media (max-width: 900px) { .mobile-nav { display: flex; overflow-x: auto; } .mobile-nav button { min-width: 58px; flex: 1 0 58px; } }
+
+.plan-table tr.plan-completed { background: #edf7f1; }
+.plan-completed .plan-event-title { text-decoration: line-through; color: #52695d; }
